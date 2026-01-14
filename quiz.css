@@ -1,0 +1,120 @@
+* {
+    margin: 0;
+    padding: 0;
+    font-family: Arial, sans-serif;
+    box-sizing: border-box;
+}
+
+body {
+    background: #f4f4f4;
+    padding: 20px;
+}
+
+header {
+    text-align: center;
+    margin-bottom: 30px;
+}
+
+header h1 {
+    font-size: 40px;
+    color: #333;
+}
+
+header p {
+    color: #555;
+}
+
+.sections {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    gap: 20px;
+}
+
+.card {
+    background: white;
+    padding: 20px;
+    border-radius: 15px;
+    text-align: center;
+    box-shadow: 0px 3px 10px rgba(0,0,0,0.1);
+    transition: 0.3s;
+}
+
+.card:hover {
+    transform: scale(1.05);
+}
+
+.card h2 {
+    margin-bottom: 10px;
+    color: #222;
+}
+
+.card p {
+    margin-bottom: 20px;
+    color: #555;
+}
+
+button {
+    background: #3b82f6;
+    border: none;
+    color: white;
+    padding: 10px 20px;
+    font-size: 16px;
+    border-radius: 8px;
+    cursor: pointer;
+    transition: 0.2s;
+}
+
+button:hover {
+    background: #1e40af;
+}
+
+/* Optional: Section coloring */
+#gk { border-top: 5px solid #f97316; }
+#maths { border-top: 5px solid #22c55e; }
+#science { border-top: 5px solid #06b6d4; }
+#history { border-top: 5px solid #ef4444; }
+
+#resultText{
+    margin: 50px;
+    text-align: center;
+    font-size: xx-large;
+}
+
+.hidden {
+    display: none;
+}
+
+#optionsContainer {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
+#optionsContainer button {
+    padding: 10px;
+    font-size: 1rem;
+    cursor: pointer;
+}
+
+.option-btn {
+    width: 100%;
+    padding: 12px 18px;
+    background-color: #c4afaf;
+    border: 2px solid #ddd;
+    border-radius: 8px;
+    margin: 8px 0;
+    font-size: 16px;
+    cursor: pointer;
+    text-align: left;
+    transition: 0.25s ease;
+}
+
+.option-btn:hover {
+    background-color: #da4949;
+    border-color: #ccc;
+}
+
+.option-btn:disabled {
+    cursor: not-allowed;
+    opacity: 0.8;
+}
